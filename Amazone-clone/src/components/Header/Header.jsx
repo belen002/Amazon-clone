@@ -4,6 +4,7 @@ import { IoIosSearch } from "react-icons/io";
 import { GrLocation } from "react-icons/gr";
 import { IoCartOutline } from "react-icons/io5";
 import LowerHeader from "./LowerHeader"
+import {Link} from "react-router-dom"
 function Header() {
 return (
     <>
@@ -12,7 +13,7 @@ return (
         <div className={classes.logo_container}>
 
             {/* logo section */}
-            <a href=""><img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="amazon logo" /></a>
+            <Link to ="/"><img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="amazon logo" /></Link>
 
             <span>
                 <GrLocation/>
@@ -44,29 +45,29 @@ return (
 
         <div className={classes.order_container}>
 
-            <a href="" className={classes.language}>
+            <Link to ="" className={classes.language}>
                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/800px-Flag_of_the_United_States.svg.png" alt="" />
 
                 <select name='' id=''>
                     <option value="">EN</option>
                 </select>
-            </a>
+            </Link>
                 
             
-            <a href="">
+            <Link to ="/Auth">
                 <p>Sign In</p>
                 <span>Account And Lists</span>
-            </a>
+            </Link>
 
-            <a href="">
+            <Link to ="/orders">
                 <p>returns</p>
                 <span>& orders</span>
-            </a>
+            </Link>
 
-            <a href="" className={classes.cart}>
+            <Link to ="/cart" className={classes.cart}>
                 <IoCartOutline size={35}/>
                 <span>0</span>
-            </a>
+            </Link>
             
             
 
